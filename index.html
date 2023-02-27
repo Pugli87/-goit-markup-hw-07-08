@@ -130,85 +130,87 @@
     </div>
 
             <!-- MOBILE MENU -->
-            <div class="menu-container js-menu-container" >
+    <div class="menu-container js-menu-container" >
+
+      <button class="menu-toggle js-close-menu" aria-label="boton de cierre">
+        <svg width="19px" height="19px">
+          <use href="./imagenes/icon.svg#icon-close"></use>
+        </svg>        
+      </button>
       
-              <button class="menu-toggle js-close-menu" aria-label="boton de cierre">
-                <svg width="19px" height="19px">
-                  <use href="./imagenes/icon.svg#icon-close"></use>
-                </svg>        
-              </button>
-              
-              <nav class="mobile-menu">
-                <ul class="mobile-menu__list">
-                  <li class="mobile-menu__item">
-                    <a href="./index.html" class="mobile-menu__link mobile-menu__link--select" >Estudio</a>
-                  </li>
-                  <li class="mobile-menu__item">
-                    <a href="./portafolio.html" class="mobile-menu__link" >Portafolio</a>
-                  </li>
-                  <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link" >Contactos</a>
-                  </li>
-                </ul>
-              </nav>
-        
-              <div class="mobile-contact">
-                <ul class="mobile-contact__list">
-                  <li class="mobile-contact__item">
-                    <a href="mailto:info@devstudio.com" class="contact-list__link"  >
-                      <svg class="contact-list__icon" width="16px" height="12px">
-                        <use href="./imagenes/icon.svg#icon-sobre"></use>
-                      </svg>
-                      info@devstudio.com
-                    </a>
-                  </li>
-                  <li class="mobile-contact__item">
-                    <a href="tel:+525555296000" class="contact-list__link" >
-                      <svg class="mobile-contact__icon" width="10px" height="16px">
-                        <use href="./imagenes/icon.svg#icon-telfono-inteligente"></use>
-                      </svg>+52 55 5529 6000
-                    </a>
-                  </li>
-                </ul>
-        
-                <ul class="mobile-contact__social list">
-                  <li class="mobile-contact__item--social">
-                    <a class="mobile-contact__link mobile-contact__link--social link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-                  </li>
-                  <li class="mobile-contact__item--social">
-                    <a class="mobile-contact__link mobile-contact__link--social link" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-                  </li>
-                  <li class="mobile-contact__item--social">
-                    <a class="mobile-contact__link mobile-contact__link--social link" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-                  </li>
-                  <li class="mobile-contact__item--social">
-                    <a class="mobile-contact__link mobile-contact__link--social link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link mobile-menu__link--select" >Estudio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portafolio.html" class="mobile-menu__link" >Portafolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link" >Contactos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-contact">
+        <ul class="mobile-contact__list">
+          <li class="mobile-contact__item">
+            <a href="mailto:info@devstudio.com" class="contact-list__link"  >
+              <svg class="contact-list__icon" width="16px" height="12px">
+                <use href="./imagenes/icon.svg#icon-sobre"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="mobile-contact__item">
+            <a href="tel:+525555296000" class="contact-list__link" >
+              <svg class="mobile-contact__icon" width="10px" height="16px">
+                <use href="./imagenes/icon.svg#icon-telfono-inteligente"></use>
+              </svg>+52 55 5529 6000
+            </a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contact__social list">
+          <li class="mobile-contact__item--social">
+            <a class="mobile-contact__link mobile-contact__link--social link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </li>
+          <li class="mobile-contact__item--social">
+            <a class="mobile-contact__link mobile-contact__link--social link" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </li>
+          <li class="mobile-contact__item--social">
+            <a class="mobile-contact__link mobile-contact__link--social link" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li class="mobile-contact__item--social">
+            <a class="mobile-contact__link mobile-contact__link--social link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     
     <!-- HEADER -->
     <header class="header">
       <div class="header__container container ">
-        <section class="header__cab">
+        <div class="menu">
+          <a href="#" class="menu__logo">Web<span class="menu__span-logo">Studio</span></a>
+          <!-- Button mobile-menu -->
+          <button class="menu__button js-open-menu" aria-expanded="false" 
+            aria-controls="mobile-menu" aria-label="boton">
+            <svg width="40px" height="40px">
+              <use href="./imagenes/icon.svg#mobile-menu"></use>
+            </svg>
+          </button>
+        </div>
           <!-- <h2 hidden>Encabezado</h2> -->
-          <nav class="menu">
-            <a href="#" class="menu__logo">Web<span class="menu__span-logo">Studio</span></a>
-              <!-- Button mobile-menu -->
-            <button class="menu-toggle menu__toggle js-open-menu" aria-expanded="false" 
-              aria-controls="mobile-menu" aria-label="boton">
-              <svg width="40px" height="40px">
-                <use href="./imagenes/icon.svg#mobile-menu"></use>
-              </svg>
-            </button>
-
-            <ul class="menu__list">
-              <li class="menu__item"><a href="./index.html" class="menu__link menu__link--select" >Estudio</a></li>
-              <li class="menu__item"><a href="./portafolio.html" class="menu__link" >Portafolio</a></li>
-              <li class="menu__item"><a href="#" class="menu__link" >Contactos</a></li>
-            </ul>
+          <nav class="menu-nav">
+              <a href="#" class="menu__logo">Web<span class="menu__span-logo">Studio</span></a>
+              <ul class="menu__list">
+                <li class="menu__item"><a href="./index.html" class="menu__link menu__link--select" >Estudio</a></li>
+                <li class="menu__item"><a href="./portafolio.html" class="menu__link" >Portafolio</a></li>
+                <li class="menu__item"><a href="#" class="menu__link" >Contactos</a></li>
+              </ul>
           </nav>
+
           <ul class="contact-list">
             <li class="contact-list__item">
               <a href="mailto:info@devstudio.com" class="contact-list__link"  >
@@ -226,7 +228,6 @@
               </a>
             </li>
           </ul>    
-        </section>
       </div>
     </header>
 

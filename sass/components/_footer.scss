@@ -1,5 +1,7 @@
 @use '../utils/variables';
 .footer{
+    display: flex;
+    width: 480px;
     background-color: variables.$background-secundary;
 
     /*----------- contenedor de contacto -----------*/

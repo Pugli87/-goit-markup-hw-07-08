@@ -75,32 +75,23 @@ img {
 }
 
 .header {
-  width: 100%;
+  width: 480px;
   height: 60px;
   border-bottom: 1px solid #ECECEC;
 }
 .header__container {
   width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header__cab {
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
 }
 .header .menu {
-  background-color: aqua;
-  display: none;
-  width: 100%;
+  min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header .menu__logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
   color: #2196F3;
   font-family: "Raleway";
   font-style: normal;
@@ -113,10 +104,28 @@ img {
 .header .menu__span-logo {
   color: #212121;
 }
-.header .menu__toggle {
+.header .menu__button {
+  border: 1px solid blue;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  min-height: 40px;
+  min-width: 40px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.header .menu__button:hover, .header .menu__button:focus {
+  fill: #2196F3;
+}
+.header .menu__list {
+  display: flex;
+  align-items: center;
 }
 .header .menu__item:not(:last-child) {
   margin-right: 50px;
@@ -176,6 +185,16 @@ img {
 .header .contact-list__icon {
   margin-right: 10px;
   padding: 0px;
+}
+@media (min-width: 481px) {
+  .header .menu__button {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .header .menu-nav {
+    display: none;
+  }
 }
 
 .backdrop {
@@ -576,6 +595,8 @@ img {
 }
 
 .footer {
+  display: flex;
+  width: 480px;
   background-color: #2F303A;
   /*----------- contenedor de contacto -----------*/
 }
