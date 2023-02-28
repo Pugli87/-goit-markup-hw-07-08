@@ -2,20 +2,22 @@
 @use '../utils/variables';
 
 .client-cont{
-    width: 100%;
+    padding: 0;
+    max-width: 480px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
     &__item{
+        padding: 0;
         flex-basis: calc(( 100% - 30px ) / 2);
     }
 
 
     &__icon{
         display: flex;
-        //width: 206px;
-        height: 90px;
+        width: auto;
+        height: 92px;
         justify-content: center;
         align-items: center;
         border: 1px solid variables.$fill-color;
