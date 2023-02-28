@@ -61,12 +61,12 @@ img {
 }
 
 .section {
-  overflow-x: hidden;
   width: 480px;
   padding: 60px 0;
 }
 
 .name-section {
+  width: 480px;
   font-weight: 700;
   font-size: 28px;
   line-height: 42px;
