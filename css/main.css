@@ -193,11 +193,6 @@ img {
     display: none;
   }
 }
-@media (max-width: 480px) {
-  .header .menu-nav__logo {
-    display: none;
-  }
-}
 
 .backdrop {
   width: 480px;
