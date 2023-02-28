@@ -62,12 +62,14 @@ outline: 1px solid variables.$hover-color;
 }
 
 .section{
+    overflow-x: hidden;
+    width: 480px;
     padding: 60px 0;
 }
 
 .name-section{
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
