@@ -68,7 +68,6 @@
 
         &__link{
             display: none;
-            //visibility: hidden;
             padding-top: 32px;
             padding-bottom: 32px;
             font-weight: 500;
@@ -135,6 +134,7 @@
     }   
 
     @media (min-width: 481px){
+        
         .menu{
             &__button{
 
@@ -142,11 +142,16 @@
                     display: none;
                 }
             }
-        }
+        }        
+        
+ 
     }
-@media (max-width: 480px){     
+    @media (max-width: 480px){     
         .menu-nav{
-            display: none;
-        }     
-    }
+            &__logo{
+                display: none;
+            }
+            
+        }
+        }
 }
