@@ -6,6 +6,7 @@
 }
 
 body{
+    display: block;
     font-size: 14px;
     font-family: "roboto", sans-serif;
     letter-spacing:  10px;
@@ -56,18 +57,18 @@ outline: 1px solid variables.$hover-color;
 } 
 
 .container{
-    min-width: 480px;
+    max-width: 480px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .section{
-    width: 480px;
+    max-width: 480px;
     padding: 60px 0;
 }
 
 .name-section{
-    width: 480px;
+    max-width: 480px;
     font-weight: 700;
     font-size: 28px;
     line-height: 42px;
