@@ -573,20 +573,17 @@ img {
 }
 
 .client-cont {
-  padding: 0;
-  max-width: 480px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 .client-cont__item {
-  padding: 0;
   flex-basis: calc((100% - 30px) / 2);
 }
 .client-cont__icon {
   display: flex;
-  width: auto;
-  height: 92px;
+  height: 90px;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
